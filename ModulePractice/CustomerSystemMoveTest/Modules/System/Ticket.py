@@ -1,9 +1,7 @@
-print('Ticket __name__ = ' + __name__ + '\n')
-
-from Modules.Asset.BasicData import BasicData
+from ..Asset.BasicData import BasicData
 
 
-# 定義票卷
+# -------------------- 定義票卷 -------------------- #
 class Ticket:
     def __init__(self, basic_data, ticket_id, ticket_code, date, price):
         self.__basic_data = basic_data
@@ -55,14 +53,12 @@ def remove_data(member_id):
 def search_data(member_id):
     print('Search ticket data in database')
 
-
 if __name__ == '__main__':
     # 測試 Ticket 類別運作正常
     print('Ticket Info:')
     basic_data = BasicData('John_Smith', '32', 'man', '0900123456', 'john@xmail.com')
     ticket = Ticket(basic_data, 'T123456', 'TPEX0001', '2020-01-01', '250')
-    print('Ticket ID = ' + ticket.get_ticket_id())
-    print('Ticket Code = ' + ticket.get_ticket_code())
-    print('Date = ' + ticket.get_date())
-    print('Price = ' + ticket.get_price())
-
+    print(ticket.get_ticket_id())
+    print(ticket.get_ticket_code())
+    print(ticket.get_date())
+    print(ticket.get_price())

@@ -1,4 +1,4 @@
-# 定義會員卡
+# ------------------- 定義會員卡 ------------------ #
 class MemberCard:
     def __init__(self, basic_data, member_id, start_date, end_date, member_tiers):
         self.__basic_data = basic_data

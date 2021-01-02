@@ -1,9 +1,7 @@
-print('MemberCard __name__ = ' + __name__ + '\n')
-
-from Modules.Asset.BasicData import BasicData
+from ..Asset.BasicData import BasicData
 
 
-# 定義會員卡
+# ------------------- 定義會員卡 ------------------ #
 class MemberCard:
     def __init__(self, basic_data, member_id, start_date, end_date, member_tiers):
         self.__basic_data = basic_data
@@ -61,8 +59,8 @@ if __name__ == '__main__':
     print('Member Card Info:')
     basic_data = BasicData('John_Smith', '32', 'man', '0900123456', 'john@xmail.com')
     member_card = MemberCard(basic_data, '12345678', '2020-01-01', '2025-01-01', 'Normal')
-    print('Member ID = ' + member_card.get_member_id())
-    print('Start Date = ' + member_card.get_start_date())
-    print('End Date = ' + member_card.get_end_date())
-    print('Member Tiers' + member_card.get_member_tiers())
+    print(member_card.get_member_id())
+    print(member_card.get_start_date())
+    print(member_card.get_end_date())
+    print(member_card.get_member_tiers())
     print('\n')

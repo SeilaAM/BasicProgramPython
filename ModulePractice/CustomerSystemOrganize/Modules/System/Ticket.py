@@ -1,4 +1,4 @@
-# 定義票卷
+# -------------------- 定義票卷 -------------------- #
 class Ticket:
     def __init__(self, basic_data, ticket_id, ticket_code, date, price):
         self.__basic_data = basic_data

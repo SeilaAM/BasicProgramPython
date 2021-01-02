@@ -1,7 +1,4 @@
-print('BasicData __name__ = ' + __name__ + '\n')
-
-
-# 客戶的基本資料
+# ----------------- 客戶的基本資料 ----------------- #
 class BasicData:
     def __init__(self, name, age, gender, phone, email):
         self.__name = name
