@@ -55,8 +55,9 @@ def search_data(member_id):
 
 
 if __name__ == '__main__':
+    print('\n')
     # 測試 MemberCard 類別運作正常
-    print('Member Card Info:')
+    print('[Member Card Info]')
     basic_data = BasicData('John_Smith', '32', 'man', '0900123456', 'john@xmail.com')
     member_card = MemberCard(basic_data, '12345678', '2020-01-01', '2025-01-01', 'Normal')
     print(member_card.get_member_id())

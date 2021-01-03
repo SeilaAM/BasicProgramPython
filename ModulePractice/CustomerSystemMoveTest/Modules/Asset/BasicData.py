@@ -39,9 +39,10 @@ class BasicData:
 
 
 if __name__ == '__main__':
+    print('\n')
     # ---------- 測試 BasicData 類別運作正常 ---------- #
     basic_data = BasicData('John', '32', 'man', '0900123456', 'john@xmail.com')
-    print('Original Basic Data:')
+    print('[Original Basic Data]')
     print('Name = ' + basic_data.get_name())
     print('Age = ' + basic_data.get_age())
     print('Gender = ' + basic_data.get_gender())
@@ -55,7 +56,7 @@ if __name__ == '__main__':
     basic_data.set_phone('0988765432')
     basic_data.set_email('john_smith@xmail.com.tw')
 
-    print('Modified Basic Data:')
+    print('[Modified Basic Data]')
     print('Name = ' + basic_data.get_name())
     print('Age = ' + basic_data.get_age())
     print('Gender = ' + basic_data.get_gender())

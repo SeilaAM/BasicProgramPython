@@ -54,8 +54,9 @@ def search_data(member_id):
     print('Search ticket data in database')
 
 if __name__ == '__main__':
+    print('\n')
     # 測試 Ticket 類別運作正常
-    print('Ticket Info:')
+    print('[Ticket Info]')
     basic_data = BasicData('John_Smith', '32', 'man', '0900123456', 'john@xmail.com')
     ticket = Ticket(basic_data, 'T123456', 'TPEX0001', '2020-01-01', '250')
     print(ticket.get_ticket_id())
